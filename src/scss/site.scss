@@ -1,0 +1,59 @@
+@import "bootstrap";
+
+header {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    background-color: $gray;
+
+    > .banner-background {
+        position: absolute;
+        left: 0;
+        top: -10%;
+        width: 100%;
+        opacity: 0.5;
+    }
+
+    .banner {
+        padding: 0 20px;
+        text-align: center;
+        color: $white;
+        z-index: 2;
+    }
+
+    @include media-breakpoint-up(xl) {
+        height: 450px;
+        > .banner-background {
+            top: -40%;
+        }
+    }
+
+    @include media-breakpoint-between(md, lg) {
+        > .banner-background {
+            width: 1200px;
+            transform: translate(-35%, 0%);
+            left: 35%;
+            top: -120px;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        > .banner-background {
+            width: 800px;
+            transform: translate(-35%, 0%);
+            left: 35%;
+        }
+    }
+}
+
+nav.navbar > .container {
+    @include media-breakpoint-down(sm) {
+        margin-left: unset;
+        margin-right: unset;
+    }
+}
+
+
+.box {
+    height: 2000px;
+}
