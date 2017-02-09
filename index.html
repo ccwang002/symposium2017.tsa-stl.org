@@ -8,10 +8,10 @@
     <title>TSA-STL Immunology Symposium 2017</title>
     <link rel="stylesheet" href="libs/sticky-state/sticky-state.css" type="text/css" />
     <script src="libs/sticky-state/sticky-state.min.js" type="text/javascript" charset="utf-8"></script>
-    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="libs/openlayers/ol.css">
     <link rel="stylesheet" href="dist/css/site.css">
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar">
     <header class="d-flex justify-content-center">
       <img class="banner-background" src="pics/St_Louis_night.jpg" alt="">
       <div class="banner align-self-center">
@@ -19,47 +19,82 @@
         <h2>Apr 8, 2017</h2>
       </div>
     </header>
-    <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md sticky sticky-top">
+    <nav id="navbar" class="navbar navbar-inverse bg-inverse navbar-toggleable-md sticky sticky-top">
       <div class="container">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand mb-0" href="#">TSA-STL Symposium</a>
         <div class="collapse navbar-collapse" id="containerNavbar">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link" href="#overview">Overview</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#schedule">Schedule</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+              <a class="nav-link" href="#keynote">Keynote</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown04">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#speakers">Speakers</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#panelists">Panelists</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Workshop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#venue">Venue</a>
+            </li>
+
           </ul>
         </div>
       </div>
     </nav>
     <div class="container-fluid">
-      <div class="container">
-        <h2>Title</h2>
-      </div>
+      <section>
+        <h2 class="anchor" id="overview">About Symposium</h2>
+        <p>Consectetur officia ad iste aperiam cupiditate adipisci Eos quasi blanditiis mollitia repellat molestias vero porro quos. Dolore officia id accusamus aliquam eveniet esse voluptatem eaque nostrum. Amet placeat assumenda asperiores.</p>
+      </section>
+
+      <section>
+        <h2 class="anchor" id="schedule">Schedule</h2>
+      </section>
+
+      <section>
+        <h2 class="anchor" id="keynote">Keynote</h2>
+      </section>
+
+      <section>
+        <h2 class="anchor" id="speakers">Speakers</h2>
+      </section>
+
+      <section>
+        <h2 class="anchor" id="panelists">Panelists</h2>
+      </section>
+
+      <section>
+        <h2 class="anchor" id="venue">Venue</h2>
+        <div class="map-container">
+          <div id="map" class="map"><div id="popup"></div></div>
+          <div class="map-address">
+            Washington University in St. Louis
+          </div>
+        </div>
+      </section>
+
+
       <div class="box"></div>
     </div>
+
+
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="libs/openlayers/ol.js"></script>
     <script src="dist/js/site.min.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript">
-    </script>
   </body>
 </html>

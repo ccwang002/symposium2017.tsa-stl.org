@@ -54,6 +54,29 @@ nav.navbar > .container {
 }
 
 
+section {
+    @include make-container();
+    @include make-container-max-widths();
+
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.anchor:before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 0;
+    height: 4em;
+    margin-top: -4em;
+
+    @include media-breakpoint-down(md) {
+        // To accommodate the expanded navbar
+        height: 10em;
+        margin-top: -10em;
+    }
+}
+
 .box {
     height: 2000px;
 }
