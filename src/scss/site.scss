@@ -62,6 +62,7 @@ section {
     margin-bottom: 2em;
 }
 
+
 .anchor:before {
     content: '';
     display: block;
@@ -72,11 +73,12 @@ section {
 
     @include media-breakpoint-down(md) {
         // To accommodate the expanded navbar
-        height: 10em;
-        margin-top: -10em;
+        height: 23em;
+        margin-top: -23em;
     }
 }
 
-.box {
-    height: 2000px;
+#map {
+    height: 500px;
+    width: 100%;
 }
