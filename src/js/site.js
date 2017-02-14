@@ -6,11 +6,12 @@ $('body').scrollspy({ target: '#navbar' });
 
 // Google Map
 function initMap() {
+    var center = {lat: 38.634150, lng: -90.262376};
     var wustl = {lat: 38.634468, lng: -90.262376};
     var parking = {lat: 38.633744, lng: -90.260160};
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 18,
-        center: wustl,
+        center: center,
         scrollwheel: false,
     });
 
@@ -22,9 +23,10 @@ function initMap() {
         // label: 'ABC'
     });
     var wustlInfoWindow = new google.maps.InfoWindow({
-        content: "<div class='map-info'>" + 
+        content: "<div class='map-info'>" +
             "<h4>Symposium</h4>" +
-            "<p>McDonnell Medical Sciences Building<br>" + 
+            "<p>Cori Auditorium<br>" +
+            "McDonnell Medical Sciences Building<br>" +
             "4564 McKinley Ave., St. Louis, MO 63110<p>" +
             "</div>"
     });
@@ -32,7 +34,7 @@ function initMap() {
         wustlInfoWindow.open(map, wustlMarker);
     });
 
-    // Marker setting for the parking 
+    // Marker setting for the parking
     var parkingMarker = new google.maps.Marker({
         position: parking,
         map: map,
@@ -40,11 +42,10 @@ function initMap() {
         title: "Parking space (Lot F)"
     });
     var parkingInfoWindow = new google.maps.InfoWindow({
-        content: "<div class='map-info'>" + 
+        content: "<div class='map-info'>" +
             "<h4>Parking</h4>" +
-            "<p>Lot F, 4510 McKinley Ave.,<br>" + 
-            "4564 McKinley Ave., St. Louis, MO 63110<p>" +
-            "<p>Free of charge; entrance on S. Taylor Ave.</p>" + 
+            "<p>Parking Lot F<br>4510 McKinley Ave., St. Louis, MO 63110</p>" +
+            "<p>Free of charge; entrance on S. Taylor Ave.</p>" +
             "</div>"
     });
     parkingMarker.addListener('click', function () {
