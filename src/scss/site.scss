@@ -47,7 +47,7 @@ header {
 }
 
 nav.navbar > .container {
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(xs) {
         margin-left: unset;
         margin-right: unset;
     }
@@ -62,7 +62,6 @@ section {
     margin-bottom: 2em;
 }
 
-
 .anchor:before {
     content: '';
     display: block;
@@ -70,11 +69,36 @@ section {
     width: 0;
     height: 4em;
     margin-top: -4em;
+    z-index: -2;
 
     @include media-breakpoint-down(md) {
         // To accommodate the expanded navbar
         height: 23em;
         margin-top: -23em;
+    }
+}
+
+.logo-in-p {
+    width: 18em;
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    display: none;
+
+    @include media-breakpoint-between(sm,md) {
+        display: block
+    }
+    @include media-breakpoint-only(sm) {
+        width: 15em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+}
+
+.logo-in-div {
+    display: block;
+    @include media-breakpoint-between(sm,md) {
+        display: none;
     }
 }
 
@@ -87,4 +111,17 @@ section {
 
 .map-info {
     padding: 1em 1em 0 1em;
+}
+
+footer {
+    width: 100%;
+    min-height: 6em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: .85em;
+    background-color: $gray-lighter;
+
+    p {
+        margin: 0;
+    }
 }
