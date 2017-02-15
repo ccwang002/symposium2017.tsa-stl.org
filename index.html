@@ -47,7 +47,7 @@
               <a class="nav-link" href="#panelists">Panelists</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Workshop</a>
+              <a class="nav-link" href="#workshop">Workshop</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#venue">Venue</a>
@@ -57,7 +57,8 @@
     </div>
   </nav>
   <div class="container-fluid">
-    <section class="anchor" id="overview">
+    <a class="nav-anchor" id="overview"></a>
+    <section id="sec-overview">
       <h2>About Symposium</h2>
       <div class="row justify-content-center flex-sm-row-reverse">
         <div class="col-lg-8">
@@ -71,7 +72,8 @@
       </div>
     </section>
 
-    <section class="anchor" id="schedule">
+    <a class="nav-anchor" id="schedule"></a>
+    <section id="sec-schedule">
       <h2>Schedule</h2>
       <div class="row justify-content-center">
         <div class="col-xl-8 offset-xl-0 offset-lg-1">
@@ -86,7 +88,7 @@
             <td></td>
             <td>
               <h5>Keynote</h5>
-              Ta-Chiang Liu 劉大強
+              <a href="#keynote">Ta-Chiang Liu 劉大強</a>
              </td>
           </tr>
           <tr><td>11:00</td><td></td></tr>
@@ -100,7 +102,7 @@
                 <li>Yi-Chieh "EJ" Peng 彭義傑</li>
               </ul>
               <p>
-                <strong>Moderator:</strong><br>
+                <u>Moderator</u><br>
                 Chin-Wen "RC" Lai 賴勁文<br>
                 PhD candidate in Immunology Program, WashU
                </p>
@@ -120,7 +122,7 @@
                 <li>Chih-Chung "Jerry" Lin 林致中</li>
               </ul>
               <p>
-                <strong>Moderator:</strong><br>
+                <u>Moderator</u><br>
                 Rachel Wong 黃之妤<br>
                 PhD candidate in Immunology Program, WashU
                </p>
@@ -139,19 +141,43 @@
       </div>
     </section>
 
-    <section class="anchor" id="keynote">
+    <a class="nav-anchor" id="keynote"></a>
+    <section id="sec-keynote">
       <h2>Keynote</h2>
+      <div class="row">
+        <div class="col-sm-9 offset-sm-3">
+          <h4>Ta-Chiang Liu, MD, Ph.D.</h4>
+        </div>
+        <div class="col-sm-3 profile-pic align-items-sm-start justify-content-sm-center">
+          <img src="pics/speakers/keynote_liu.png" alt="" class="align-self-center img-fluid">
+        </div>
+        <div class="col-sm-9">
+          <p>Assistant Professor, Pathology &amp; Immunology<br>
+          Washington University in St. Louis</p>
+          <p>Dr. Liu received my education from National Yang Ming University in Taipei, Taiwan, and Imperial College London, UK.  He did postdoctoral training at Massachusetts General Hospital, residency at Washington University in St. Louis, and clinical training at Johns Hopkins University.  He became a faculty member in the Department of Pathology and Immunology at WashU in 2012.</p>
+          <p>Professor Liu’s main research interest is in the role of Paneth cells in Crohn’s Disease. He is particularly interested in the molecular mechanisms of how morphologic patterns of cytoplasmic antimicrobial granules are affected by genetics and environmental triggers, and their clinical relevance. Another research interest is to develop disease pathogenesis-relevant prognostic biomarkers.</p>
+          <h6><a class="abstract-link" data-toggle="modal" href="#keynoteAbstract">Topic: Harnessing Big Data to Refine Translational Research of Complex Immunologic Diseases</a></h6>
+        </div>
+      </div>
     </section>
 
-    <section class="anchor" id="speakers">
+    <a class="nav-anchor" id="speakers"></a>
+    <section id="sec-speakers">
       <h2>Speakers</h2>
     </section>
 
-    <section class="anchor" id="panelists">
+    <a class="nav-anchor" id="panelists"></a>
+    <section id="sec-panelists">
       <h2>Panelists</h2>
     </section>
 
-    <section class="anchor" id="venue">
+    <a class="nav-anchor" id="workshop"></a>
+    <section id="sec-workshop">
+      <h2>Workshop</h2>
+    </section>
+
+    <a class="nav-anchor" id="venue"></a>
+    <section id="sec-venue">
       <h2>Venue</h2>
       <div id="map" class="map"></div>
       <div class="row">
@@ -190,6 +216,45 @@
       <p>Maintained by Taiwanese Scholar Association in St. Louis (TSA-STL). Contact us at <a href="mailto:contact@tsa-stl.org">contact@tsa-stl.org</a> for any question.</p>
     </div>
   </footer>
+
+    <!-- Abstracts -->
+    <div class="abstract modal fade" id="keynoteAbstract" tabindex="-1" role="dialog" aria-labelledby="keynoteAbstractTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="keynoteAbstractTitle">Keynote Speech</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <h3>Harnessing Big Data to Refine Translational Research of Complex Immunologic Diseases</h3>
+                  <p>
+                    <em>Ta-Chiang Liu</em><br>
+                    Department of Pathology &amp; Immunology, Washington University in St. Louis, USA
+                  </p>
+                  <p>The pathogenesis of complex immunologic diseases (including systemic lupus erythematosus, rheumatoid arthritis, inflammatory bowel disease [IBD], among others) involve environmental triggers on genetically susceptible hosts. Genome-wide association studies have identified a wide spectrum of susceptibility genes for these diseases. For instance, over 170 susceptibility genes are associated with the development of IBD, including identification of ethnic-specific gene lists. Likewise, several potential environmental triggers have been shown to be associated with IBD development and/or prognosis (eg. microbiome). The collection of the various genetic, transcriptomic, and microbiota big data sets provide us clues of how these factors can potentially interconnect. These big data pools also facilitate the development of next generation, rationally-designed translational research strategies for IBD and other complex immunologic diseases that can identify disease-relevant pathways and therapeutic targets.</p>
+                  <h4>Speaker Bio</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3 hidden-md-down profile-pic">
+                  <img src="pics/speakers/keynote_liu.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-9">
+                  <img src="pics/speakers/keynote_liu.png" alt="" class="img-fluid profile-pic-wrap">
+                  <p>Dr. Liu received my education from National Yang Ming University in Taipei, Taiwan, and Imperial College London, UK.  He did postdoctoral training at Massachusetts General Hospital, residency at Washington University in St. Louis, and clinical training at Johns Hopkins University.  He became a faculty member in the Department of Pathology and Immunology at WashU in 2012.</p>
+                  <p>Professor Liu’s main research interest is in the role of Paneth cells in Crohn’s Disease. He is particularly interested in the molecular mechanisms of how morphologic patterns of cytoplasmic antimicrobial granules are affected by genetics and environmental triggers, and their clinical relevance. Another research interest is to develop disease pathogenesis-relevant prognostic biomarkers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <!-- jQuery first, then Tether, then Bootstrap JS. -->
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
