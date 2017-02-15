@@ -2,7 +2,7 @@
 
 header {
     position: relative;
-    height: 350px;
+    min-height: 350px;
     overflow: hidden;
     background-color: $gray;
 
@@ -38,6 +38,13 @@ header {
     }
 
     @include media-breakpoint-down(sm) {
+        padding: 2em 0;
+        h1 {
+            font-size: $font-size-h1 * 0.8;
+        }
+        h2 {
+            font-size: $font-size-h2 * 0.8;
+        }
         > .banner-background {
             width: 800px;
             transform: translate(-35%, 0%);
