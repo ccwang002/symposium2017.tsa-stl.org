@@ -27,7 +27,7 @@ function initMap() {
             "<h4>Symposium</h4>" +
             "<p>Cori Auditorium<br>" +
             "McDonnell Medical Sciences Building<br>" +
-            "4564 McKinley Ave., St. Louis, MO 63110<p>" +
+            "4565 McKinley Ave., St. Louis, MO 63110<p>" +
             "</div>"
     });
     wustlMarker.addListener('click', function () {
