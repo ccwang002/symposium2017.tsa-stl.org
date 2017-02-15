@@ -122,10 +122,10 @@ $timeline-event-padding: 0.25em;
     }
     tr:nth-child(even) {
         > td:nth-child(1) {
-            border-right: 2px dotted $gray-dark;
+            border-right: 1px dotted $gray-dark;
         }
         > td:nth-child(2) {
-            padding-left: 1.5em;
+            padding-left: 3em;
             max-width: 30em;
         }
     }
