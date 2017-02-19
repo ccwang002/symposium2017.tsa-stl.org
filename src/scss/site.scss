@@ -82,8 +82,8 @@ section {
 
     @include media-breakpoint-down(md) {
         // To accommodate the expanded navbar
-        height: 23em;
-        margin-top: -23em;
+        height: 22em;
+        margin-top: -22em;
     }
 }
 
