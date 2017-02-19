@@ -238,6 +238,38 @@ $timeline-event-padding: 0.25em;
     }
 }
 
+.speaker {
+    // col-lg-3 col-md-4 col-sm-6
+    @include make-col-ready();
+
+    @include media-breakpoint-up(lg) {
+        @include make-col(3);
+    }
+    @include media-breakpoint-only(md) {
+        @include make-col(4);
+    }
+    @include media-breakpoint-down(sm) {
+        @include make-col(6);
+    }
+    @include media-breakpoint-down(xs) {
+        @include make-col(10);
+        @include make-col-offset(1);
+    }
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.speaker-profile {
+    .card-block {
+        padding: 0.5em;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 #map {
     height: 400px;
     width: 100%;
