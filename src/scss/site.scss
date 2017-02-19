@@ -133,9 +133,46 @@ $timeline-event-padding: 0.25em;
         }
         > td:nth-child(2) {
             padding-left: 3em;
-            max-width: 30em;
+            max-width: 65em;
+            padding-top: $timeline-event-padding;
+            padding-bottom: $timeline-event-padding;
+
+            @include media-breakpoint-down(md) {
+                padding-left: 1.5em;
+            }
         }
     }
+
+    h5 {
+        line-height: 1.25;
+    }
+
+    p {
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+
+    .title {
+        color: $gray-light;
+        font-size: 0.85em;
+    }
+
+    .topic {
+        font-weight: 500;
+        font-style: italic;
+        margin-bottom: 0.25em;
+    }
+
+    li {
+        margin-left: -0.5em;
+    }
+
+    li + li {
+        // when speaker and title are included
+        // margin-top: 0.75em;
+        margin-top: 0.5em;
+    }
+
 }
 
 .abstract-link {
